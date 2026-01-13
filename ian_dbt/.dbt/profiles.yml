@@ -1,0 +1,13 @@
+ian_dbt:
+  outputs:
+    dev:
+      account: vg43388.ap-southeast-1
+      database: IANTRISTANKAFKA
+      password: NL6pGafqzKy6Xrj
+      role: ACCOUNTADMIN
+      schema: analytics
+      threads: 4
+      type: snowflake
+      user: iantrisdc
+      warehouse: KAFKABANKING
+  target: dev

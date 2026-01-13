@@ -1,0 +1,187 @@
+[2026-01-13T08:59:28.351+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-01-13T08:59:28.363+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: minio_to_snowflake_banking.load_snowflake scheduled__2026-01-13T08:50:00+00:00 [queued]>
+[2026-01-13T08:59:28.366+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: minio_to_snowflake_banking.load_snowflake scheduled__2026-01-13T08:50:00+00:00 [queued]>
+[2026-01-13T08:59:28.366+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2026-01-13T08:59:28.370+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): load_snowflake> on 2026-01-13 08:50:00+00:00
+[2026-01-13T08:59:28.372+0000] {standard_task_runner.py:64} INFO - Started process 56 to run task
+[2026-01-13T08:59:28.374+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'minio_to_snowflake_banking', 'load_snowflake', 'scheduled__2026-01-13T08:50:00+00:00', '--job-id', '213', '--raw', '--subdir', 'DAGS_FOLDER/miniotoSnowflake.py', '--cfg-path', '/tmp/tmpbbysffj8']
+[2026-01-13T08:59:28.376+0000] {standard_task_runner.py:91} INFO - Job 213: Subtask load_snowflake
+[2026-01-13T08:59:28.398+0000] {task_command.py:426} INFO - Running <TaskInstance: minio_to_snowflake_banking.load_snowflake scheduled__2026-01-13T08:50:00+00:00 [running]> on host 59a9472814dd
+[2026-01-13T08:59:28.433+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='minio_to_snowflake_banking' AIRFLOW_CTX_TASK_ID='load_snowflake' AIRFLOW_CTX_EXECUTION_DATE='2026-01-13T08:50:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-13T08:50:00+00:00'
+[2026-01-13T08:59:28.434+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-01-13T08:59:28.446+0000] {connection.py:611} INFO - Snowflake Connector for Python Version: 4.2.0, Python Version: 3.11.9, Platform: Linux-6.12.54-linuxkit-aarch64-with-glibc2.36
+[2026-01-13T08:59:28.446+0000] {connection.py:1695} INFO - Connecting to GLOBAL Snowflake domain
+[2026-01-13T08:59:29.156+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181018205046.parquet -> @customers stage
+[2026-01-13T08:59:29.293+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181047938005.parquet -> @customers stage
+[2026-01-13T08:59:29.434+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181238677337.parquet -> @customers stage
+[2026-01-13T08:59:29.566+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181238691057.parquet -> @customers stage
+[2026-01-13T08:59:29.685+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181238701090.parquet -> @customers stage
+[2026-01-13T08:59:29.810+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181238708415.parquet -> @customers stage
+[2026-01-13T08:59:29.933+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181238716114.parquet -> @customers stage
+[2026-01-13T08:59:30.075+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181239137995.parquet -> @customers stage
+[2026-01-13T08:59:30.201+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181239143398.parquet -> @customers stage
+[2026-01-13T08:59:30.327+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181239148836.parquet -> @customers stage
+[2026-01-13T08:59:30.565+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181239154447.parquet -> @customers stage
+[2026-01-13T08:59:30.681+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181239159829.parquet -> @customers stage
+[2026-01-13T08:59:30.798+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181240706699.parquet -> @customers stage
+[2026-01-13T08:59:30.943+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181240721667.parquet -> @customers stage
+[2026-01-13T08:59:31.065+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181240731920.parquet -> @customers stage
+[2026-01-13T08:59:31.181+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181240738844.parquet -> @customers stage
+[2026-01-13T08:59:31.291+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181240746921.parquet -> @customers stage
+[2026-01-13T08:59:31.402+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181241187495.parquet -> @customers stage
+[2026-01-13T08:59:31.526+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181241193067.parquet -> @customers stage
+[2026-01-13T08:59:31.659+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181241198348.parquet -> @customers stage
+[2026-01-13T08:59:31.788+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181241203826.parquet -> @customers stage
+[2026-01-13T08:59:31.913+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181241208570.parquet -> @customers stage
+[2026-01-13T08:59:32.034+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181242724931.parquet -> @customers stage
+[2026-01-13T08:59:32.158+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181242739313.parquet -> @customers stage
+[2026-01-13T08:59:32.282+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181242746862.parquet -> @customers stage
+[2026-01-13T08:59:32.408+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181242753432.parquet -> @customers stage
+[2026-01-13T08:59:32.531+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181242759581.parquet -> @customers stage
+[2026-01-13T08:59:32.657+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181243177244.parquet -> @customers stage
+[2026-01-13T08:59:32.781+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181243182373.parquet -> @customers stage
+[2026-01-13T08:59:32.905+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181243187145.parquet -> @customers stage
+[2026-01-13T08:59:33.032+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181243193890.parquet -> @customers stage
+[2026-01-13T08:59:33.159+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181243199368.parquet -> @customers stage
+[2026-01-13T08:59:33.276+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181244747610.parquet -> @customers stage
+[2026-01-13T08:59:33.393+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181244757169.parquet -> @customers stage
+[2026-01-13T08:59:33.516+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181244767055.parquet -> @customers stage
+[2026-01-13T08:59:33.640+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181244773365.parquet -> @customers stage
+[2026-01-13T08:59:33.768+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181244780630.parquet -> @customers stage
+[2026-01-13T08:59:33.906+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181245197159.parquet -> @customers stage
+[2026-01-13T08:59:34.029+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181245202338.parquet -> @customers stage
+[2026-01-13T08:59:34.157+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181245209337.parquet -> @customers stage
+[2026-01-13T08:59:34.282+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181245215098.parquet -> @customers stage
+[2026-01-13T08:59:34.405+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181245220117.parquet -> @customers stage
+[2026-01-13T08:59:34.539+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181246771160.parquet -> @customers stage
+[2026-01-13T08:59:34.665+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181246786727.parquet -> @customers stage
+[2026-01-13T08:59:34.795+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181246796305.parquet -> @customers stage
+[2026-01-13T08:59:34.915+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181246803097.parquet -> @customers stage
+[2026-01-13T08:59:35.038+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181246811775.parquet -> @customers stage
+[2026-01-13T08:59:35.185+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181246885945.parquet -> @customers stage
+[2026-01-13T08:59:35.312+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181246892537.parquet -> @customers stage
+[2026-01-13T08:59:35.437+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181246897929.parquet -> @customers stage
+[2026-01-13T08:59:35.564+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181246903185.parquet -> @customers stage
+[2026-01-13T08:59:35.689+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181246908678.parquet -> @customers stage
+[2026-01-13T08:59:35.813+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181412853777.parquet -> @customers stage
+[2026-01-13T08:59:35.935+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181412859073.parquet -> @customers stage
+[2026-01-13T08:59:36.062+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181412864483.parquet -> @customers stage
+[2026-01-13T08:59:36.189+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181412869767.parquet -> @customers stage
+[2026-01-13T08:59:36.646+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181412875476.parquet -> @customers stage
+[2026-01-13T08:59:36.780+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181412880573.parquet -> @customers stage
+[2026-01-13T08:59:36.905+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181412886733.parquet -> @customers stage
+[2026-01-13T08:59:37.043+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181412892111.parquet -> @customers stage
+[2026-01-13T08:59:37.181+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181412897570.parquet -> @customers stage
+[2026-01-13T08:59:37.347+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181413237508.parquet -> @customers stage
+[2026-01-13T08:59:37.471+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181414838011.parquet -> @customers stage
+[2026-01-13T08:59:37.617+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181414850572.parquet -> @customers stage
+[2026-01-13T08:59:37.740+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181414860863.parquet -> @customers stage
+[2026-01-13T08:59:37.860+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181414867939.parquet -> @customers stage
+[2026-01-13T08:59:37.983+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181414874458.parquet -> @customers stage
+[2026-01-13T08:59:38.109+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181415239041.parquet -> @customers stage
+[2026-01-13T08:59:38.244+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181415244699.parquet -> @customers stage
+[2026-01-13T08:59:38.368+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181415250542.parquet -> @customers stage
+[2026-01-13T08:59:38.492+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181415258374.parquet -> @customers stage
+[2026-01-13T08:59:38.618+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181415263584.parquet -> @customers stage
+[2026-01-13T08:59:38.748+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181416846349.parquet -> @customers stage
+[2026-01-13T08:59:38.872+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181416860781.parquet -> @customers stage
+[2026-01-13T08:59:39.035+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181416870998.parquet -> @customers stage
+[2026-01-13T08:59:39.171+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181416878409.parquet -> @customers stage
+[2026-01-13T08:59:39.289+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181417361720.parquet -> @customers stage
+[2026-01-13T08:59:39.406+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181417366977.parquet -> @customers stage
+[2026-01-13T08:59:39.527+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181417372233.parquet -> @customers stage
+[2026-01-13T08:59:39.687+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181417377611.parquet -> @customers stage
+[2026-01-13T08:59:39.826+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181417382943.parquet -> @customers stage
+[2026-01-13T08:59:39.946+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181417404078.parquet -> @customers stage
+[2026-01-13T08:59:40.068+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181418860124.parquet -> @customers stage
+[2026-01-13T08:59:40.221+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181418875002.parquet -> @customers stage
+[2026-01-13T08:59:40.347+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181418885568.parquet -> @customers stage
+[2026-01-13T08:59:40.481+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181418892563.parquet -> @customers stage
+[2026-01-13T08:59:40.611+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181418899400.parquet -> @customers stage
+[2026-01-13T08:59:40.735+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181419307094.parquet -> @customers stage
+[2026-01-13T08:59:40.863+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181419312276.parquet -> @customers stage
+[2026-01-13T08:59:40.984+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181419316846.parquet -> @customers stage
+[2026-01-13T08:59:41.101+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181419321694.parquet -> @customers stage
+[2026-01-13T08:59:41.227+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181419326889.parquet -> @customers stage
+[2026-01-13T08:59:41.338+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181420876261.parquet -> @customers stage
+[2026-01-13T08:59:41.449+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181420898321.parquet -> @customers stage
+[2026-01-13T08:59:41.562+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181420907212.parquet -> @customers stage
+[2026-01-13T08:59:41.681+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181420914928.parquet -> @customers stage
+[2026-01-13T08:59:41.800+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181420921709.parquet -> @customers stage
+[2026-01-13T08:59:41.912+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181421436053.parquet -> @customers stage
+[2026-01-13T08:59:42.034+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181421444576.parquet -> @customers stage
+[2026-01-13T08:59:42.153+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181421452759.parquet -> @customers stage
+[2026-01-13T08:59:42.394+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181421463288.parquet -> @customers stage
+[2026-01-13T08:59:42.518+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181421470770.parquet -> @customers stage
+[2026-01-13T08:59:42.649+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181422889151.parquet -> @customers stage
+[2026-01-13T08:59:42.776+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181422903896.parquet -> @customers stage
+[2026-01-13T08:59:42.909+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181422913656.parquet -> @customers stage
+[2026-01-13T08:59:43.036+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181422920850.parquet -> @customers stage
+[2026-01-13T08:59:43.175+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181422927282.parquet -> @customers stage
+[2026-01-13T08:59:43.295+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181423366001.parquet -> @customers stage
+[2026-01-13T08:59:43.406+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181423370761.parquet -> @customers stage
+[2026-01-13T08:59:43.522+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181423375835.parquet -> @customers stage
+[2026-01-13T08:59:43.637+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181423380871.parquet -> @customers stage
+[2026-01-13T08:59:43.756+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181423385768.parquet -> @customers stage
+[2026-01-13T08:59:43.876+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181424925110.parquet -> @customers stage
+[2026-01-13T08:59:43.991+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181424938409.parquet -> @customers stage
+[2026-01-13T08:59:44.113+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181424948649.parquet -> @customers stage
+[2026-01-13T08:59:44.233+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181424955558.parquet -> @customers stage
+[2026-01-13T08:59:44.360+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181424964860.parquet -> @customers stage
+[2026-01-13T08:59:44.483+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181425451334.parquet -> @customers stage
+[2026-01-13T08:59:44.608+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181425456828.parquet -> @customers stage
+[2026-01-13T08:59:44.743+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181425462198.parquet -> @customers stage
+[2026-01-13T08:59:44.864+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181425467753.parquet -> @customers stage
+[2026-01-13T08:59:44.991+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181425473063.parquet -> @customers stage
+[2026-01-13T08:59:45.111+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181426934903.parquet -> @customers stage
+[2026-01-13T08:59:45.217+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181426950031.parquet -> @customers stage
+[2026-01-13T08:59:45.327+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181426958441.parquet -> @customers stage
+[2026-01-13T08:59:45.437+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181426966004.parquet -> @customers stage
+[2026-01-13T08:59:45.547+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181426973529.parquet -> @customers stage
+[2026-01-13T08:59:45.662+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181427421882.parquet -> @customers stage
+[2026-01-13T08:59:45.776+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181427427154.parquet -> @customers stage
+[2026-01-13T08:59:45.890+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181427433024.parquet -> @customers stage
+[2026-01-13T08:59:46.008+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181427438160.parquet -> @customers stage
+[2026-01-13T08:59:46.118+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181427443760.parquet -> @customers stage
+[2026-01-13T08:59:46.229+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181428966462.parquet -> @customers stage
+[2026-01-13T08:59:46.371+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181428975542.parquet -> @customers stage
+[2026-01-13T08:59:46.481+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_181428985791.parquet -> @customers stage
+[2026-01-13T08:59:46.568+0000] {local_task_job_runner.py:124} ERROR - Received SIGTERM. Terminating subprocesses
+[2026-01-13T08:59:46.571+0000] {process_utils.py:132} INFO - Sending 15 to group 56. PIDs of all processes in the group: [56]
+[2026-01-13T08:59:46.571+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 56
+[2026-01-13T08:59:46.574+0000] {taskinstance.py:2611} ERROR - Received SIGTERM. Terminating subprocesses.
+[2026-01-13T08:59:46.575+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-01-13T08:59:46.583+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/miniotoSnowflake.py", line 74, in load_to_snowflake
+    cur.execute(f"PUT file://{f} @%{table}")
+  File "/home/airflow/.local/lib/python3.11/site-packages/snowflake/connector/cursor.py", line 1095, in execute
+    sf_file_transfer_agent.execute()
+  File "/home/airflow/.local/lib/python3.11/site-packages/snowflake/connector/file_transfer_agent.py", line 448, in execute
+    self.transfer(self._file_metadata)
+  File "/home/airflow/.local/lib/python3.11/site-packages/snowflake/connector/file_transfer_agent.py", line 688, in transfer
+    cv_main_thread.wait()
+  File "/usr/local/lib/python3.11/threading.py", line 327, in wait
+    waiter.acquire()
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 2613, in signal_handler
+    raise AirflowTaskTerminated("Task received SIGTERM signal")
+airflow.exceptions.AirflowTaskTerminated: Task received SIGTERM signal
+[2026-01-13T08:59:46.589+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=minio_to_snowflake_banking, task_id=load_snowflake, run_id=scheduled__2026-01-13T08:50:00+00:00, execution_date=20260113T085000, start_date=20260113T085928, end_date=20260113T085946
+[2026-01-13T08:59:46.605+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=56, status='terminated', exitcode=2, started='08:59:28') (56) terminated with exit code 2
+[2026-01-13T08:59:46.605+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 143
+[2026-01-13T08:59:46.613+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
