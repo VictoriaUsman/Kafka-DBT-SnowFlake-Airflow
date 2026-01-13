@@ -1,0 +1,1 @@
+docker exec -it airflow-scheduler python /opt/airflow/dags/miniotoSnowflake.py

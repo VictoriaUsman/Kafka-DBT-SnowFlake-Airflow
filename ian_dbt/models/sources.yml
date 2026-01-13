@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: iantristan
+    database: IANTRISTANKAFKA
+    schema: IANSNOWFLAKE
+    tables:
+      - name: customers
+      - name: accounts
+      - name: transactions
